@@ -7,6 +7,8 @@ nav{
     padding: 20px;
     position: fixed;
     top: 0;
+    z-index: 20;
+    background-color: rgb(17, 20, 23);
 }
 
 nav ul a{
@@ -35,7 +37,6 @@ ul{
 
 nav h1{
     font-size: 30px;
-    font-weight: 600;
     background: linear-gradient(to right, rgb(66,180,205), white);
     background-clip: text;
     color: transparent;
