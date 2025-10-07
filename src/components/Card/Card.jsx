@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import "./Card.css";
 
-const Card = () => {
+const Card = ({title, image}) => {
   return (
-    <div>
-      
+    <div className='card'>
+      <h1>{title}</h1>
+      <div className="hover-card">
+      <img src={image} alt="" />
+      </div>
     </div>
   )
 }
 
-export default Card
+export default Card;
