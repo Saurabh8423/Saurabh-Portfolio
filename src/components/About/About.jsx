@@ -1,12 +1,85 @@
 import React from "react";
 import "./About.css";
 import Card from "../Card/Card";
-import mern from "../../assets/mern.png"
-import ml from "../../assets/ml.png"
-import dsa from "../../assets/dsa.png"
-
+import mern from "../../assets/mern.png";
+import ml from "../../assets/ml.png";
+import dsa from "../../assets/dsa.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  useGSAP(() => {
+    gsap.from(".circle", {
+      x: -100,
+      duration: 1,
+      opacity: 0,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: ".circle",
+        scroll: "body",
+        scrub: 2,
+        start: "top 50%",
+        end: "top 30%",
+      },
+    });
+    gsap.from(".line", {
+      x: -100,
+      duration: 1,
+      opacity: 0,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: ".line",
+        scroll: "body",
+        scrub: 2,
+        start: "top 50%",
+        end: "top 30%",
+      },
+    });
+
+    gsap.from(".about-details h1", {
+      x: -100,
+      duration: 1,
+      opacity: 0,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: ".bout-details h1",
+        scroll: "body",
+        scrub: 2,
+        start: "top 50%",
+        end: "top 30%",
+      },
+    });
+
+    gsap.from(".about-details ul", {
+      y: 100,
+      duration: 1,
+      opacity: 0,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: ".about-details ul",
+        scroll: "body",
+        scrub: 2,
+        start: "top 50%",
+        end: "top 30%",
+      },
+    });
+
+    gsap.from(".right-about", {
+      x: 100,
+      duration: 1,
+      opacity: 0,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: ".right-about",
+        scroll: "body",
+        scrub: 2,
+        start: "top 50%",
+        end: "top 30%",
+      },
+    });
+  });
   return (
     <div id="about">
       <div className="left-about">
@@ -36,7 +109,6 @@ const About = () => {
             </ul>
           </div>
 
-
           <div className="education">
             <h1>Education</h1>
             <ul>
@@ -64,10 +136,10 @@ const About = () => {
       </div>
 
       <div className="right-about">
-        <Card title="MERN STACK WEB DEVELOPER" image={mern}/>
-        <Card title="MACHINE LEARNING" image={ml}/>
-        <Card title="DSA" image={dsa}/>
-      </div> 
+        <Card title="MERN STACK WEB DEVELOPER" image={mern} />
+        <Card title="MACHINE LEARNING" image={ml} />
+        <Card title="DSA" image={dsa} />
+      </div>
     </div>
   );
 };

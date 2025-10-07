@@ -1,8 +1,41 @@
 import React from "react";
 import con from "../../assets/contact.png";
 import "./Contact.css";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+  useGSAP(() => {
+    gsap.from(".left-contact", {
+      x: -100,
+      duration: 1,
+      opacity: 0,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: ".left-contact",
+        scroll: "body",
+        scrub: 2,
+        start: "top 80%",
+        end: "top 30%",
+      },
+    });
+
+     gsap.from("form", {
+      x: 100,
+      duration: 1,
+      opacity: 0,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: "form",
+        scroll: "body",
+        scrub: 2,
+        start: "top 80%",
+        end: "top 30%",
+      },
+    });
+  });
   return (
     <div id="contact">
       <div className="left-contact">
