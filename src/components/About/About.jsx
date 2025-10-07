@@ -44,7 +44,7 @@ const About = () => {
       opacity: 0,
       stagger: 1,
       scrollTrigger: {
-        trigger: ".bout-details h1",
+        trigger: ".about-details h1",
         scroll: "body",
         scrub: 2,
         start: "top 50%",
