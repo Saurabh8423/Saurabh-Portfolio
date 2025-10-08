@@ -36,7 +36,7 @@
 }
 
 .line2 {
-    font-size: 2em;
+    font-size: 1.8em;
     background: linear-gradient(to right, rgb(66, 180, 205), white);
     background-clip: text;
     color: transparent;
@@ -44,6 +44,9 @@
 
 .line3 {
     font-size: 1em;
+    background: linear-gradient(to right, rgb(229, 81, 180), white);
+    background-clip: text;
+    color: transparent;
 }
 
 .home-details button {
