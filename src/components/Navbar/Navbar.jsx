@@ -5,9 +5,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Navbar = () => {
-  let menu = useRef();
-  let mobile = useRef();
-
   useGSAP(() => {
     let tl = gsap.timeline();
     tl.from("nav h1", {
@@ -22,6 +19,9 @@ const Navbar = () => {
       stagger: 1,
     });
   });
+
+  let menu = useRef();
+  let mobile = useRef();
 
   return (
     <nav>
@@ -94,6 +94,10 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
+          onClick={() => {
+            mobile.current.classList.remove("activemobile");
+            menu.current.classList.remove("activeham");
+          }}
         >
           <li>About</li>
         </Link>
@@ -103,6 +107,10 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
+          onClick={() => {
+            mobile.current.classList.remove("activemobile");
+            menu.current.classList.remove("activeham");
+          }}
         >
           <li>Projects</li>
         </Link>
@@ -112,6 +120,10 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
+          onClick={() => {
+            mobile.current.classList.remove("activemobile");
+            menu.current.classList.remove("activeham");
+          }}
         >
           <li>Contact</li>
         </Link>
