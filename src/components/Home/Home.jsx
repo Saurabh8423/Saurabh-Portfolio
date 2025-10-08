@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import man from "../../assets/man.png";
+import resume from "../../assets/Saurabh-Kumar.pdf";
 import download from "../../assets/download-icon.png";
 import { Link } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
@@ -64,10 +65,15 @@ const Home = () => {
             <Link to="contact" smooth={true} duration={800}>
               <button>HIRE ME</button>
             </Link>
-            <a href="../../assets/Saurabh-Kumar.pdf" download>
+            <a href={resume} download="Saurabh-Kumar.pdf">
               <button className="resume-btn">
-                RESUME{" "}
-                <img src={download} alt="Arrow Icon" width={18} height={18} />
+                RESUME
+                <img
+                  src={download}
+                  alt="Download Icon"
+                  width={18}
+                  height={18}
+                />
               </button>
             </a>
           </div>
