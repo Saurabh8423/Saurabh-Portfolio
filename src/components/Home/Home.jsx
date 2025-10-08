@@ -1,6 +1,8 @@
 import React from "react";
 import "./Home.css";
 import man from "../../assets/man.png";
+import download from "../../assets/download-icon.png";
+import { Link } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -48,7 +50,17 @@ const Home = () => {
               delaySpeed={1000}
             />
           </div>
-          <button>HIRE ME</button>
+          <div className="home-buttons">
+            <Link to="contact" smooth={true} duration={800}>
+              <button>HIRE ME</button>
+            </Link>
+            <a href="/Saurabh_Kumar.pdf" download>
+              <button className="resume-btn">
+                RESUME{" "}
+                <img src={download} alt="Arrow Icon" width={18} height={18}  />
+              </button>
+            </a>
+          </div>
         </div>
       </div>
 
