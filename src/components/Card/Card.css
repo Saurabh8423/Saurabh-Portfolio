@@ -51,3 +51,40 @@
     background-clip: text;
     color: transparent;
 }
+
+.card-buttons {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.card-buttons a {
+  text-decoration: none;
+}
+
+.deploy-btn {
+  background-color: rgb(87, 195, 219);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+.card:hover .deploy-btn {
+  opacity: 1;
+}
+
+.deploy-btn:hover {
+  background-color: rgb(198, 42, 96); 
+  transform: scale(1.1);
+}

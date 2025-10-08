@@ -47,12 +47,41 @@ const Project = () => {
     <div id="projects">
       <h1 id="project-heading">2+ YEARS EXPERIENCED IN PROJECTS</h1>
       <div className="slider">
-        <Card title="LEARNING MANAGEMENT SYSTEM" image={lms} />
-        <Card title="GALAXY TRAVELS" image={glx} />
-        <Card title="SMARTPHONE ADDICTION CARE" image={nomophobia} />
-        <Card title="WORKOUTS" image={workouts} />
-        <Card title="NOTES APP" image={notes} />
-        <Card title="ROCK PAPER SCISSORS GAME" image={game} />
+        <Card 
+        title="LEARNING MANAGEMENT SYSTEM" 
+        image={lms} 
+        deployLink="https://lms-frontend-ashen.vercel.app/"
+        />
+        
+        <Card
+          title="GALAXY TRAVELS"
+          image={glx}
+          deployLink="https://galaxy-travels.vercel.app/"
+        />
+
+        <Card 
+        title="SMARTPHONE ADDICTION CARE" 
+        image={nomophobia} 
+        deployLink="https://smartphone-addiction-care.vercel.app/"
+        />
+
+        <Card 
+        title="WORKOUTS" 
+        image={workouts} 
+        deployLink="https://workouts-website.vercel.app/login"
+        />
+
+        <Card 
+        title="NOTES APP" 
+        image={notes} 
+        deployLink="https://notes-app-woad-eight.vercel.app/"
+        />
+
+        <Card 
+        title="ROCK PAPER SCISSORS GAME" 
+        image={game} 
+        deployLink="https://rock-paper-scissors-game-tawny-pi.vercel.app/"
+        />
       </div>
     </div>
   );

@@ -31,6 +31,12 @@ const Home = () => {
       duration: 1,
       opacity: 0,
     });
+
+     gsap.from(".home-buttons", {
+      y: 100,
+      duration: 1,
+      opacity: 0,
+    });
   });
 
   return (
@@ -41,7 +47,7 @@ const Home = () => {
           <div className="line2">SAURABH KUMAR</div>
           <div className="line3">
             <Typewriter
-              words={["MERN DEVELOPER", "SOFTWARE DEVELOPER", "ML & AI"]}
+              words={["MERN DEVELOPER", "SOFTWARE DEVELOPER", "MACHINE LEARNING"]}
               loop={true}
               cursor
               cursorStyle="|"
@@ -54,7 +60,7 @@ const Home = () => {
             <Link to="contact" smooth={true} duration={800}>
               <button>HIRE ME</button>
             </Link>
-            <a href="/Saurabh_Kumar.pdf" download>
+            <a href="../../assets/Saurabh_Kumar.pdf" download>
               <button className="resume-btn">
                 RESUME{" "}
                 <img src={download} alt="Arrow Icon" width={18} height={18}  />
