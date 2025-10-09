@@ -66,7 +66,7 @@ const About = () => {
       },
     });
 
-    gsap.from(".right-about", {
+    gsap.from(".right-about .card", {
       x: 100,
       duration: 1,
       opacity: 0,
