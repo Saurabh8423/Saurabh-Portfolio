@@ -68,7 +68,7 @@ const Project = () => {
         <Card 
         title="WORKOUTS" 
         image={workouts} 
-        deployLink="https://workouts-website-frontend.onrender.com"
+        deployLink="https://workouts-website-frontends.vercel.app/login"
         />
 
         <Card 
