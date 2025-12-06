@@ -3,7 +3,9 @@ import Card from "../Card/Card";
 import "./Project.css";
 import lms from "../../assets/lms.webp";
 import rms from "../../assets/rms.png";
+import hubly from "../../assets/hubly.jpg";
 import glx from "../../assets/glx.png";
+import aqi from "../../assets/aqi.png";
 import nomophobia from "../../assets/Nomophobia.webp";
 import workouts from "../../assets/workouts.png";
 import notes from "../../assets/notes.png";
@@ -75,10 +77,17 @@ const Project = () => {
         />
 
         <Card
-          title="GALAXY TRAVELS"
-          image={glx}
-          deployLink="https://galaxy-travels.vercel.app/"
-          techIcons={[SiReact, SiJavascript, SiCss3]}
+          title="Hubly-CRM"
+          image={hubly}
+          deployLink="https://hubly-crm-two.vercel.app/"
+          techIcons={[
+            SiMongodb,
+            SiExpress,
+            SiReact,
+            SiNodedotjs,
+            SiJavascript,
+            SiCss3,
+          ]}
         />
 
         <Card
@@ -94,6 +103,13 @@ const Project = () => {
           ]}
         />
 
+         <Card
+          title="GALAXY TRAVELS"
+          image={glx}
+          deployLink="https://galaxy-travels.vercel.app/"
+          techIcons={[SiReact, SiJavascript, SiCss3]}
+        />
+
         <Card
           title="LEARNING MANAGEMENT SYSTEM"
           image={lms}
@@ -105,6 +121,19 @@ const Project = () => {
             SiNodedotjs,
             SiJavascript,
             SiTailwindcss,
+          ]}
+        />
+
+        <Card
+          title="AQI-PREDICTOR"
+          image={aqi}
+          deployLink="https://aqi-predictor-five.vercel.app/"
+          techIcons={[
+            GiArtificialIntelligence,
+            SiReact,
+            SiJavascript,
+            SiPython,
+            SiCss3,
           ]}
         />
 

@@ -7,7 +7,7 @@ nav{
     padding: 20px;
     position: fixed;
     top: 0;
-    z-index: 20;
+    z-index: 40;
     background-color: rgb(17, 20, 23);
     overflow: hidden;
 }

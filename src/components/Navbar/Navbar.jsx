@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import SoundToggle from "../Shared/SoundToggle"; 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -64,6 +65,8 @@ const Navbar = () => {
           <li>Contact</li>
         </Link>
       </ul>
+
+      <SoundToggle />
 
       <div
         className="hamburger"
